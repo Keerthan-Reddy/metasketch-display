@@ -1,0 +1,58 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #b7e9fb;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.image-gallery {
+  height: 20%;
+  overflow-x: scroll;
+  white-space: nowrap;
+  overflow-y: hidden;
+  padding: 6px;
+}
+
+.image-gallery img {
+  display: inline-block;
+  height: 100%;
+  margin-right: 4px;
+  border-radius: 7px;
+  border-style: inset;
+  border-color: #012970;
+}
+.logo img {
+  width: 250px;
+  height: 100px;
+}
+.logo {
+  position: absolute;
+  top: -12px;
+  left: -5px;
+  z-index: 9999;
+}
+
+/* icons css */
+.icons {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: -5px;
+  padding: 0px;
+  margin-top: 80px;
+  gap: 30px;
+}
+
+.position {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+@media screen and (max-width: 430px) {
+}
