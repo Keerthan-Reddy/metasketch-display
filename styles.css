@@ -45,7 +45,7 @@ body {
   right: -5px;
   padding: 0px;
   margin-top: 80px;
-  gap: 30px;
+  gap: 40px;
 }
 
 .position {
@@ -55,4 +55,22 @@ body {
 }
 
 @media screen and (max-width: 430px) {
+  .icons {
+    margin-top: 40px;
+    gap: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .icons {
+    margin-top: 40px;
+    gap: 40px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .icons {
+    margin-top: 40px;
+    gap: 40px;
+  }
 }
