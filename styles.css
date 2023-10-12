@@ -61,6 +61,9 @@ body {
 
 .map-frame {
   overflow: hidden;
+  width: 130%;
+  margin-left: -15%;
+  height: 80%;
 }
 
 @media screen and (max-width: 430px) {
