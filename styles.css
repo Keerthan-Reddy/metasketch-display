@@ -1,5 +1,6 @@
 html,
 body {
+  overflow: hidden;
   height: 100%;
   margin: 0;
   padding: 0;
@@ -87,6 +88,13 @@ body {
 @media screen and (max-width: 1024px) {
   .icons {
     margin-top: 40px;
+    gap: 40px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .icons {
+    margin-top: 30px;
     gap: 40px;
   }
 }
