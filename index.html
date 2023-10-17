@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html id="html">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,43 +9,95 @@
       function changeIframe(url) {
         document.getElementById("myIframe").src = url;
       }
+
+      function ButtonFunction() {
+        var virtual = document.getElementById("container"); //done
+        var icon = document.getElementById("icon-gallery"); //done
+
+        var g = document.getElementById("gallery");
+
+        var i1 = document.getElementById("1");
+        var i2 = document.getElementById("2");
+        var i3 = document.getElementById("3");
+        var i4 = document.getElementById("4");
+        var i5 = document.getElementById("5");
+
+        if (virtual.style.display === "none") {
+          virtual.style.display = "block";
+          icon.src = "images/gallery.png";
+
+          g.style.display = "none";
+
+          i1.style.display = "block";
+          i2.style.display = "block";
+          i3.style.display = "block";
+          i4.style.display = "block";
+
+          document.body.style.overflow = "hidden"; // Change overflow for body
+          document.documentElement.style.overflow = "hidden"; // Change overflow for html
+        } else {
+          virtual.style.display = "none";
+          icon.src = "images/360.png";
+
+          g.style.display = "block";
+
+          i1.style.display = "none";
+          i2.style.display = "none";
+          i3.style.display = "none";
+          i4.style.display = "none";
+
+          i5.style.marginTop = "-25px";
+
+          document.body.style.overflow = "auto"; // Restore default overflow for body
+          document.documentElement.style.overflow = "auto"; // Restore default overflow for html
+        }
+      }
     </script>
-    <script defer="" src="script.js"></script>
   </head>
-  <body>
+  <body id="main">
     <div class="logo">
       <a href="/"><img src="logo3.svg" alt="MetaSketch" /></a>
     </div>
 
     <div class="icons">
-      <div class="info-icon">
+      <div class="info-icon" id="1">
         <a href="#"
           ><img src="images/1.png" alt="MetaSketch" class="icon-image"
         /></a>
       </div>
 
-      <div class="call-icon">
+      <div class="call-icon" id="2">
         <a href="tel:9347950266"
           ><img src="images/2.png" alt="MetaSketch" class="icon-image"
         /></a>
       </div>
 
-      <div class="location-icon">
+      <div class="location-icon" id="3">
         <a href="https://goo.gl/maps/LoUtDsR8Q6YfuVh16" target="_blank"
           ><img src="images/3.png" alt="MetaSketch" class="icon-image"
         /></a>
       </div>
 
-      <div class="website-icon">
+      <div class="website-icon" id="4">
         <a
           href="https://omsree.com/spacious_apartments_in_yapral/?utm_source=grank_google&utm_medium=cpc&utm_campaign={brand_search}&utm_term=om%20sree%20heights&keyword=om%20sree%20heights&matchtype=b&device=c&gad=1&gclid=Cj0KCQjwsp6pBhCfARIsAD3GZubMV9Y-BaEmpj56x_45LO3eIRdAbTTpkk1kw--0OioBnIbAxVGfmpQaAv8iEALw_wcB"
           target="_blank"
           ><img src="images/4.png" alt="MetaSketch" class="icon-image"
         /></a>
       </div>
+
+      <div class="gallery-icon" id="5">
+        <img
+          onclick="ButtonFunction()"
+          src="images/gallery.png"
+          alt="MetaSketch"
+          class="icon-image"
+          id="icon-gallery"
+        />
+      </div>
     </div>
 
-    <div class="container">
+    <div class="container" id="container">
       <iframe
         id="myIframe"
         src="https://www.google.com/maps/embed?pb=!4v1688903941616!6m8!1m7!1sCAoSLEFGMVFpcFBHcmQ2SWREX2hoeDRwclJhU3lJMEpuOV9HUWRYQ05lSUhXSGdB!2m2!1d17.56125237928416!2d78.48916785400198!3f247.43041037713076!4f-2.5795812298880634!5f0.4000000000000002"
@@ -56,7 +108,7 @@
         class="map-frame"
       ></iframe>
 
-      <div class="image-gallery">
+      <div class="image-gallery" id="default-img">
         <img
           class="image"
           src="images/Main-Entrance.png"
@@ -119,6 +171,22 @@
           alt="Balcony"
           onclick="changeIframe('https://www.google.com/maps/embed?pb=!4v1689141464928!6m8!1m7!1sCAoSLEFGMVFpcFB1REVmeWpMMVZUZGNGdFBaLUtxT0hzRDkyYkxDMmUwMUxQNVVr!2m2!1d17.56122923757426!2d78.48909695427999!3f197.97851995285467!4f-7.6024216982956005!5f0.4000000000000002')"
         />
+      </div>
+    </div>
+
+    <div class="container-gal" id="gallery">
+      <h1 class="title">Gallery</h1>
+
+      <div class="image-container">
+        <img src="images/img-1.jpg" alt="" />
+        <img src="images/img-2.jpg" alt="" />
+        <img src="images/img-3.jpg" alt="" />
+        <img src="images/img-4.jpg" alt="" />
+        <img src="images/img-5.jpg" alt="" />
+        <img src="images/img-6.jpg" alt="" />
+        <img src="images/img-7.jpg" alt="" />
+        <img src="images/img-8.jpg" alt="" />
+        <img src="images/img-9.jpg" alt="" />
       </div>
     </div>
   </body>

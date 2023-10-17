@@ -1,10 +1,18 @@
-html,
+html {
+  overflow: hidden;
+
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #dbf4ff;
+}
 body {
+  /* overflow: hidden; */
   overflow: hidden;
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: #b7e9fb;
+  background-color: #dbf4ff;
 }
 .container {
   display: flex;
@@ -27,6 +35,25 @@ body {
   border-style: inset;
   border-color: #012970;
 }
+
+.image-gallery-1 {
+  display: none;
+  height: 20%;
+  overflow-x: scroll;
+  white-space: nowrap;
+  overflow-y: hidden;
+  padding: 6px;
+}
+
+.image-gallery-1 img {
+  display: inline-block;
+  height: 100%;
+  margin-right: 4px;
+  border-radius: 7px;
+  border-style: inset;
+  border-color: #012970;
+}
+
 .logo img {
   width: 250px;
   height: 100px;
@@ -67,6 +94,26 @@ body {
   height: 80%;
 }
 
+.gallery-button {
+  position: absolute;
+  margin-top: 10%;
+  margin-left: auto;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  height: 50%;
+}
+
+.gallery > img {
+  overflow-x: scroll;
+  white-space: nowrap;
+  overflow-y: hidden;
+  padding: 6px;
+}
+
 @media screen and (max-width: 430px) {
   .icons {
     margin-top: 40px;
@@ -83,12 +130,21 @@ body {
     margin-top: 40px;
     gap: 40px;
   }
+
+  .icon-image {
+    height: 70px;
+    width: 70px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
   .icons {
     margin-top: 40px;
     gap: 40px;
+  }
+  .icon-image {
+    height: 70px;
+    width: 70px;
   }
 }
 
@@ -97,4 +153,50 @@ body {
     margin-top: 30px;
     gap: 40px;
   }
+  .icon-image {
+    height: 70px;
+    width: 70px;
+  }
 }
+
+/* new css for gallery */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container-gal {
+  max-width: 95%;
+  margin: 20px auto;
+}
+
+.container-gal .title {
+  font-size: 50px;
+  background-color: none;
+  color: #012970;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 15px;
+  margin-top: 60px;
+}
+
+.container-gal .image-container {
+  columns: 3 250px;
+  gap: 15px;
+}
+
+.container-gal .image-container img {
+  margin-bottom: 10px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+/* .container-gal {
+  display: hidden;
+} */
