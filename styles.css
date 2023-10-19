@@ -200,3 +200,29 @@ body {
 .container-gal {
   display: hidden;
 }
+
+/* Base styles for the tooltip */
+a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+a::before {
+  content: attr(data-tooltip);
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  right: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+a:hover::before {
+  opacity: 1;
+}
