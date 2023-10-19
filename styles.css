@@ -202,27 +202,28 @@ body {
 }
 
 /* Base styles for the tooltip */
-a {
+.tooltip {
   position: relative;
   display: inline-block;
   text-decoration: none;
 }
 
-a::before {
+.tooltip::before {
   content: attr(data-tooltip);
   position: absolute;
   background: rgba(0, 0, 0, 0.8);
   color: #fff;
-  padding: 5px;
+  padding: 20px; /* Increased padding for a square tooltip */
   border-radius: 5px;
   right: 100%;
   top: 50%;
   transform: translateY(-50%);
-  white-space: nowrap;
+  white-space: normal; /* Allow text to wrap */
   opacity: 0;
   transition: opacity 0.3s;
+  max-width: 200px; /* Set maximum width */
 }
 
-a:hover::before {
+.tooltip:hover::before {
   opacity: 1;
 }
