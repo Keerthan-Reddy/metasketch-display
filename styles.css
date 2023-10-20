@@ -222,6 +222,7 @@ body {
   opacity: 0;
   transition: opacity 0.3s;
   max-width: 200px; /* Set maximum width */
+  text-align: left;
 }
 
 .tooltip:hover::before {
