@@ -202,7 +202,7 @@ body {
 }
 
 /* Base styles for the tooltip */
-.tooltip {
+/* .tooltip {
   position: relative;
   display: inline-block;
   text-decoration: none;
@@ -213,18 +213,46 @@ body {
   position: absolute;
   background: rgba(0, 0, 0, 0.8);
   color: #fff;
-  padding: 20px; /* Increased padding for a square tooltip */
+  padding: 20px; 
   border-radius: 5px;
   right: 100%;
   top: 50%;
   transform: translateY(-50%);
-  white-space: normal; /* Allow text to wrap */
+  white-space: normal;
   opacity: 0;
   transition: opacity 0.3s;
-  max-width: 200px; /* Set maximum width */
+  max-width: 200px; 
   text-align: left;
 }
 
 .tooltip:hover::before {
   opacity: 1;
+} */
+
+.text-box {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+
+  border: 1px solid;
+  border-radius: 10px;
+  position: absolute;
+  right: 75px;
+  top: 240px;
+  background: rgba(0, 0, 0, 0.6);
+  transition: opacity 0.3s;
+  display: none;
 }
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #fff;
+}
+
+/* .forflex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+} */
