@@ -183,6 +183,22 @@ p {
     right: 65px;
     top: 175px;
   }
+  .box {
+    width: 19rem;
+    height: 10%;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  position: relative;
+  top: 30%;
+  left: 35%;
+  font-size: smaller;
+  background-color: #fff;
+  border: 2px solid black;
+  box-shadow: 2px 2px black;
+  border-radius: 10px;
+  transition: 2s;
+  }
 }
 
 @media screen and (max-width: 430px) {
@@ -200,6 +216,22 @@ p {
     right: 65px;
     top: 180px;
   }
+  .box {
+    width: 80%;
+    height: 10%;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  position: relative;
+  top: 50%;
+  left:40%;
+  font-size: smaller;
+  background-color: #8fbbfe;
+  border: 2px solid black;
+  box-shadow: 2px 2px black;
+  border-radius: 10px;
+  transition: 2s;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -216,6 +248,22 @@ p {
     right: 65px;
     top: 180px;
   }
+  .box {
+  width: 40%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  font-size: x-small;
+  background-color: #8fbbfe;
+  border: 2px solid black;
+  box-shadow: 2px 2px black;
+  border-radius: 10px;
+  transition: 2s;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -227,9 +275,25 @@ p {
     height: 60px;
     width: 60px;
   }
+  .box {
+  width: 100%;
+  font-size: smaller;
+  height: 10%;
+  display: flex;
+  align-items:flex-start;
+  justify-self: center;
+  position: relative;
+  top: 40%;
+  left: 40%;
+  background-color: #8fbbfe;
+  border: 2px solid black;
+  box-shadow: 2px 2px black;
+  border-radius: 10px;
+  transition: 2s;
+  }
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 2040px) {
   .icons {
     margin-top: 25px;
     gap: 10px;
@@ -242,6 +306,23 @@ p {
   .text-box {
     right: 65px;
     top: 180px;
+  }
+  .box {
+    width: 19rem;
+    height: 2.62rem;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    position: relative;
+    top: 40%;
+    left: 35%;
+    color: #237ae3;
+    background-color: #dceaff;
+    border: 2px solid black;
+    box-shadow: 1px 1px black;
+    border-radius: 10px;
+    transition: 2s;
+    padding: 8px;
   }
 }
 
@@ -257,18 +338,18 @@ p {
     height: 30px;
 } */
 
-.box {
-  width: 290px;
-  height: 40px;
+/* .box {
+  width: 19rem;
+  height: 2.62rem;
   display: flex;
   align-items: center;
   justify-self: center;
   position: relative;
-  top: 300px;
-  left: 550px;
+  top: 40%;
+  left: 35%;
   background-color: #8fbbfe;
   border: 2px solid black;
   box-shadow: 2px 2px black;
   border-radius: 10px;
   transition: 2s;
-}
+} */
